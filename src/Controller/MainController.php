@@ -29,4 +29,14 @@ class MainController extends AbstractController
             'item_id' => $itemId
         ]);
     }
+
+    /**
+     * @Route("/about", name="about_us")
+     *
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function aboutUs()
+    {
+        return $this->render('main/about.html.twig', []);
+    }
 }

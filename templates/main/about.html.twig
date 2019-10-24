@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div class="row">
+    <h1>About Us</h1>
+</div>
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+
+    <script>
+        $("#homepage").removeClass("active");
+        $("#about_us").addClass("active");
+    </script>
+{% endblock %}
